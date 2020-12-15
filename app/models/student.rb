@@ -1,5 +1,6 @@
+require 'pry'
 class Student < ActiveRecord::Base
-    def to_string
-        @student = Student.to_s(first_name: "Daenerys", last_name: "Targaryen")
+    def to_s
+         "#{first_name} #{last_name}"
     end
 end
